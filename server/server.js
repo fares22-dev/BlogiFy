@@ -20,13 +20,7 @@ mongoose.connect(mongoURI, {
 
 //!  MIDDLEWARE
 app.use(cors());
-app.use(cors(
-  {
-      origin: ["https://blogi-fy-theta.vercel.app"],
-      methods: ["POST", "GET"],
-      credentials: true
-  }
-  ));
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -36,11 +30,14 @@ app.use(express.json());
 
 
 const port = process.env.PORT || 4000;
+app.use(cors(
+  {
+      origin: ["https://blogi-fy-theta.vercel.app"],
+      methods: ["POST", "GET"],
+      credentials: true
+  }
+  ));
 
-
-app.use(cors({
-    origin: 'http://localhost:5174'
-  }));
   
 
   
