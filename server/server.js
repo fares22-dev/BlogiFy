@@ -29,7 +29,7 @@ app.use(express.json());
 
 
 
-const port = process.env.PORT || 4000;
+//const port = process.env.PORT || 4000;
 app.use(cors(
   {
       origin: ["https://blogi-fy-lpcd.vercel.app/"],
@@ -78,6 +78,6 @@ app.post("/delete",(req,res)=>{
 
 
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen("https://blogi-fy-theta.vercel.app/", () => {
+    console.log(`Server is running `);
   });
