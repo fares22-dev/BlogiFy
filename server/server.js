@@ -22,7 +22,7 @@ mongoose.connect(mongoURI, {
 app.use(cors());
 app.use(cors(
   {
-      origin: ["blogi-fy-theta.vercel.app"],
+      origin: ["https://blogi-fy-theta.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
   }
