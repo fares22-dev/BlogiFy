@@ -16,7 +16,7 @@ function App() {
 
 
   useEffect(()=>{
-    fetch("http://localhost:4000/api")
+    fetch("http://blogi-fy-theta.vercel.app/api")
     .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
