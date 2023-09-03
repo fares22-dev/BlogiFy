@@ -32,7 +32,7 @@ app.use(express.json());
 const port = process.env.PORT || 4000;
 app.use(cors(
   {
-      origin: ["https://blogi-fy-theta.vercel.app"],
+      origin: ["https://blogi-fy-lpcd.vercel.app/"],
       methods: ["POST", "GET"],
       credentials: true
   }
