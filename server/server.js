@@ -32,7 +32,7 @@ app.use(express.json());
 const port = process.env.PORT || 4000;
 app.use(cors(
   {
-      origin: ["https://blogi-fy-lpcd.vercel.app/"],
+      origin: ["https://64f5904fd2209b170a574cc8--fantastic-kangaroo-80d1a1.netlify.app/"],
       methods: ["POST", "GET"],
       credentials: true
   }
@@ -79,5 +79,5 @@ app.post("/delete",(req,res)=>{
 
 
 app.listen(port, () => {
-    console.log(`Server is running `);
+    console.log(`Server is RUNNING `);
   });
