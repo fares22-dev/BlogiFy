@@ -32,7 +32,7 @@ app.use(express.json());
 const port = process.env.PORT || 4000;
 app.use(cors(
   {
-      origin: ["https://64f5904fd2209b170a574cc8--fantastic-kangaroo-80d1a1.netlify.app/"],
+      origin: ["https://64f596692d47551e10afd033--teal-kringle-af33b8.netlify.app/
       methods: ["POST", "GET"],
       credentials: true
   }
